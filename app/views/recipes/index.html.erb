@@ -1,0 +1,7 @@
+<%= link_to '新規投稿', new_recipe_path %>
+
+<% @recipes.each do |resipe| %>
+<div>
+  <%= link_to recipe_path(recipe.id) do %><%=recipe.title %><% end %>
+</div>
+<% end %>
