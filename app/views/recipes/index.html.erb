@@ -1,7 +1,10 @@
-<%= link_to '新規投稿', new_recipe_path %>
+
 
 <% @recipes.each do |resipe| %>
 <div>
   <%= link_to recipe_path(recipe.id) do %><%=recipe.title %><% end %>
 </div>
 <% end %>
+
+
+<button><%= link_to new_recipe_path, class:"fixed_btn" do%><br><i class="fas fa-utensils"></i><br> 投稿する<% end %></button>
